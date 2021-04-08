@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <img id ="headimg" src="img/yato.jpeg">
+	<header>Eanime</header>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="#contact">Series</a>
+    </div>
+	<title>Eanime</title>
+</head>
+<body>
+	<br>
+	<script>
+      var movies = ["Tenki no ko", "Hello World", "Your Name"];
+      var movie_links = ["https://drive.google.com/file/d/1w0EjbD_NhKs4BIXiOrFQqg2dhUqlMX4n/view?usp=sharing", "https://drive.google.com/file/d/10stMctfdbANNIMHV26R9ak7vcRI4UY9L/view?usp=sharing", "https://drive.google.com/file/d/14jK24TW8pyKX-Pjxp-i6OBgX3A8qpefw/view?usp=sharing"]
+
+      for (var i = 0; i < movies.length; i++) {
+      	var a = document.createElement("a");
+      	var linkText = document.createTextNode(movies[i]);
+      	a.appendChild(linkText);
+      	a.title = movies[i];
+      	a.href = movie_links[i];
+      	document.body.appendChild(a);
+      	document.write("<br>");
+      }
+    </script>
+</body>
